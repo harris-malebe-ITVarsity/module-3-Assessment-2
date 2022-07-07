@@ -1,0 +1,258 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    
+    height: 100%;
+}
+
+.body-home{
+    background-image: url('images/background%20pic.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body-meals{
+    background-image: url('images/background%20pic.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*========== HEADER ==========*/
+.header{
+    background-color: aquamarine;
+    
+    width: 100%;
+    height: 50px;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    
+    text-align: center;
+}
+
+.header i{
+    float: left;
+    padding: 17px 0px 0px 17px;
+    color: #fff;
+}
+
+.header img{
+    width: 150px;
+    padding-top: 14px;
+    padding-right: 25px;
+}
+
+/*========== HOME PAGE ==========*/
+
+#home-logo-img{
+    widows: 50px;
+    display: block;
+    margin: auto;
+    padding: 25px 10px 10px 10px;
+    padding: 25px;
+}
+
+#home-logo-text{
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+
+/*===== HOME PAGE MENU =====*/
+
+.home-menu-item{
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid white;
+    
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+/*========== MEALS PAGE ==========*/
+
+#meals {
+    padding-top: 50px;
+}
+/*===== HOME PAGE MENU =====*/
+
+.meals-list a{
+    text-decoration: none;
+}
+
+.meals-list-item{
+    border: 5px solid #1a1a1a;
+    margin: 10px;
+}
+
+.meals-list-item h1{
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a;
+    padding-left: 10px;
+}
+
+.meals-list-item i {
+    float: right;
+    color: #1a1a1a;
+    padding-right: 10px;
+}
+
+.meals-list-item p{
+    font-size: 15px;
+    font-style: italic;
+    color: #4d4d4d;
+    margin-top: -7px;
+    padding-left: 10px;
+}
+
+
+/*========== RECIPE PAGE ==========*/
+
+#recipe {
+    padding-top: 50px;
+}
+
+/*========== RECIPE DETAILS ==========*/
+
+.recipe-details img{
+    width: 100%
+}
+
+.recipe-details h1{
+    font-size: 25px;
+    text-align: center;
+    border: 5px solid #1a1a1a;
+    margin: 10px;
+    padding: 5px;
+}
+
+.recipe-details h2{
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.recipe-details-info {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.recipe-details-info p {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.recipe-detals-ingredients label {
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.recipe-details-steps {
+    padding-top: 20px;
+}
+
+.recipe-details-steps ol{
+    padding-left: 28px;
+}
+
+/*========== Thank You ==========*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100px;
+    background: #3c5077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*========== RESPONSIVE LAYOUT ==========*/
+
+@media only screen and(min-width:600px){
+    .recipe-details-info p {
+    font-size: 13px;
+}
+}
+
+
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup{
+    width: 500px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popup img{
+    widows: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
