@@ -198,61 +198,60 @@ body{
 }
 
 
-.btn{
-    padding: 10px 60px;
-    background: #fff;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: 500;
-    border-radius: 30px;
-}
+/******* Restaurant Name****/
 
-.popup{
-    width: 500px;
-    background: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%,-50%)scale(0.1);
+.store-name{
     text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
+    padding:10px 0px 0px 0px;
+    font-size:60px;
+    font-family: Playball;
+    color:#fff;
 }
 
-.open popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%)scale(1);
+textarea {
+    width: 80%;
+    height: 100%;
+    margin: auto;
 }
 
-.popup img{
-    widows: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+#comm-label {
+    padding-top: 5px;
+    font-size:25px;
+    color: black;
+    font-family: sans-serif solid;
+}
+button {
+    padding:7px;
+    font-family: Libre;
+    background-color: skyblue;
+    margin-bottom: 25px;
+}
+button a {
+    color: white;
+    text-decoration: none;
 }
 
-.popup h2{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-}
-
-.popup button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background: #6fd649;
+/******** Order-Page-Main *********/
+main#order-comm h1 {
+    text-align:center;
+    font-size:25px;
     color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-family:Libre;
 }
+
+main#order-comm p {
+    padding-top: 30px;
+    text-align:center;
+    font-size:12px;
+    color: #fff;
+    font-family:Libre;
+}
+
+main#order-comm h2 {
+    text-align:center;
+    font-size:30px;
+    color: #fff;
+    font-family:Libre;
+    padding-top: 30px;
+}
+

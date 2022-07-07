@@ -55,25 +55,28 @@
                      <input id="Check-05" type="checkbox">
                     <label for="check-05">Red Wine</label>
                 </div>
-                <div class="popup" id="popup">
-                        <img src="images/404-tick.png">
-                        <h2>Thank you</h2>
-                        <p>We Appreciate Your support</p>
-                        <button type="button" onclick="closePopup()">Okay</button>
-                </div>
                 
+                <div id="form">
+                    <form action="order.html" method="POST">
+                        <ul>
+                            <li>
+                                <label for="comm" id="comm-label">Comments</label>
+                            </li>
+                            <li>
+                                <textarea type="text" id="comm" name="comments">
+                                </textarea>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="order.html">Place Order</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
             
         </div>
-         <script>
-            let popup = document.getElementById("popup");
-            
-            function openPopup(){
-                popup.classList.add("open-popup");
-            }
-            function closePopup(){
-                popup.classList.remove("close-popup");
-            }
-        </script>
+    
     </body>
 </html>
